@@ -1,0 +1,91 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 1px;
+  background-color: #2196F3;
+  padding: 1px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+.item1 { 
+  grid-area: 1;}
+  .item2 { grid-area: 1;
+  grid-column: 2 / span 3;}
+  .item3 { grid-area: 2; }
+  .item4 { grid-area: 3;
+  grid-column: 2;
+  grid-row: 2; }
+  .item5 { grid-area: 3;
+    grid-column: 2;
+    grid-row: 3; }
+  .item6 { grid-area: 2 / 3 / 4 / 3; }
+  .item7 { grid-area: 3; }
+  .item8 { grid-area: 4 / 1 / 7 / 1 ; }
+  .item9 { grid-area: 2; }
+  .item10 { grid-area: 5;
+    grid-column: 4;
+    grid-row: 3 / span 5; }
+  .item11 { grid-area: 5;
+  grid-column: span 2;
+  grid-row: span 2; }
+  .item12 { grid-area: 6;
+  grid-column: span 2; }
+
+.kuning {
+  background-color: yellow;
+}
+.hitam {
+  background-color: black;
+}
+.Hijau {
+  background-color: green;
+}
+.merah {
+   background-color: red;
+}
+.birutua {
+  background-color: blue;
+}
+
+.biru {
+  background-color: lightskyblue;
+}
+
+.coklat {
+  background-color: brown;
+}
+
+.putih {
+  background-color: white;
+}
+
+.abu {
+  background-color: grey;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.ungu {
+  background-color: purple;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.teksputih {
+  color: whitesmoke;
+}
