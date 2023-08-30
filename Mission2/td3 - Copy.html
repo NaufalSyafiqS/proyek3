@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h2>Barang</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card text-center m-3">
+                            <img class="card-img-top" src="C:\HTML\Mission2\Roman.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Barang 1</h5>
+                                <p class="card-text">Deskripsi barang 1.</p>
+                                <p class="card-text">Harga: Rp<span id="harga1">10000</span></p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-danger" onclick="kurangiBarang(1)">-</button>
+                                    <span id="kuantitas1" class="mx-3">0</span>
+                                    <button class="btn btn-success" onclick="tambahBarang(1)">+</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card text-center m-3">
+                            <img class="card-img-top" src="C:\HTML\Mission2\Roman.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Barang 1</h5>
+                                <p class="card-text">Deskripsi barang 1.</p>
+                                <p class="card-text">Harga: Rp<span id="harga2">20000</span></p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-danger" onclick="kurangiBarang(2)">-</button>
+                                    <span id="kuantitas2" class="mx-3">0</span>
+                                    <button class="btn btn-success" onclick="tambahBarang(2)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card text-center m-3">
+                            <img class="card-img-top" src="C:\HTML\Mission2\Roman.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Barang 1</h5>
+                                <p class="card-text">Deskripsi barang 1.</p>
+                                <p class="card-text">Harga: Rp<span id="harga3">30000</span></p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-danger" onclick="kurangiBarang(3)">-</button>
+                                    <span id="kuantitas3" class="mx-3">0</span>
+                                    <button class="btn btn-success" onclick="tambahBarang(3)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card text-center m-3">
+                            <img class="card-img-top" src="C:\HTML\Mission2\Roman.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Barang 1</h5>
+                                <p class="card-text">Deskripsi barang 1.</p>
+                                <p class="card-text">Harga: Rp<span id="harga4">40000</span></p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-danger" onclick="kurangiBarang(4)">-</button>
+                                    <span id="kuantitas4" class="mx-3">0</span>
+                                    <button class="btn btn-success" onclick="tambahBarang(4)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card text-center m-3">
+                            <img class="card-img-top" src="C:\HTML\Mission2\Roman.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Barang 5</h5>
+                                <p class="card-text">Deskripsi barang 5.</p>
+                                <p class="card-text">Harga: Rp<span id="harga5">50000</span></p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-danger" onclick="kurangiBarang(5)">-</button>
+                                    <span id="kuantitas5" class="mx-3">0</span>
+                                    <button class="btn btn-success" onclick="tambahBarang(5)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card text-center m-3">
+                            <img class="card-img-top" src="C:\HTML\Mission2\Roman.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Barang 6</h5>
+                                <p class="card-text">Deskripsi barang 6.</p>
+                                <p class="card-text">Harga: Rp<span id="harga6">60000</span></p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-danger" onclick="kurangiBarang(6)">-</button>
+                                    <span id="kuantitas6" class="mx-3">0</span>
+                                    <button class="btn btn-success" onclick="tambahBarang(6)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  <div class="container">
+  <div class="col">
+    <div class="col-md-6">
+      <div class="card justify-content-end">
+          <div class="card-body text-center">
+              <h5 class="card-title text-center">Total Produk</h5>
+              <ul id="daftar-produk" class="list-group">
+                  <!-- Daftar produk akan muncul di sini -->
+              </ul>
+              <p class="card-text text-center">Total Harga: Rp<span id="total-harga">0</span></p>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+    <script>
+      var barangList = {
+          1: { nama: "Barang 1", harga: 10000, kuantitas: 0 },
+          2: { nama: "Barang 2", harga: 20000, kuantitas: 0 },
+          3: { nama: "Barang 3", harga: 30000, kuantitas: 0 },
+          4: { nama: "Barang 4", harga: 40000, kuantitas: 0 },
+          5: { nama: "Barang 5", harga: 50000, kuantitas: 0 },
+          6: { nama: "Barang 6", harga: 60000, kuantitas: 0 },
+          // Tambahkan lebih banyak barang jika diperlukan
+      };
+  
+      var totalHarga = 0.00; // Total harga
+  
+      // Fungsi untuk menghitung pajak (11%)
+      function hitungPajak() {
+          return totalHarga * 0.11;
+      }
+  
+      // Fungsi untuk menambah barang
+      function tambahBarang(barangID) {
+          var barang = barangList[barangID];
+  
+          if (barang) {
+              barang.kuantitas++;
+              totalHarga += barang.harga;
+              updateTotalHarga();
+              updateKuantitas(barangID);
+              tambahDaftarProduk(barang.nama);
+              tambahPajak(); // Memanggil fungsi tambahPajak setelah menambah barang
+          }
+      }
+  
+      // Fungsi untuk mengurangi barang
+      function kurangiBarang(barangID) {
+          var barang = barangList[barangID];
+  
+          if (barang && barang.kuantitas > 0) {
+              barang.kuantitas--;
+              totalHarga -= barang.harga;
+              updateTotalHarga();
+              updateKuantitas(barangID);
+              tambahDaftarProduk(barang.nama);
+              tambahPajak(); // Memanggil fungsi tambahPajak setelah mengurangi barang
+          }
+      }
+  
+      // Fungsi untuk menambah pajak ke total harga
+      function tambahPajak() {
+          var pajak = hitungPajak();
+          totalHarga += pajak;
+          updateTotalHarga();
+      }
+  
+      // Fungsi untuk mengupdate total harga
+      function updateTotalHarga() {
+          document.getElementById("total-harga").textContent = totalHarga.toFixed(2);
+      }
+  
+      // Fungsi untuk mengupdate kuantitas barang
+      function updateKuantitas(barangID) {
+          var barang = barangList[barangID];
+          document.getElementById("kuantitas" + barangID).textContent = barang.kuantitas;
+      }
+  
+      // Fungsi untuk menambahkan barang ke daftar produk
+      function tambahDaftarProduk(namaBarang) {
+          var daftarProduk = document.getElementById("daftar-produk");
+          daftarProduk.innerHTML = ""; // Menghapus daftar produk sebelum menambahkannya kembali
+          for (var barangID in barangList) {
+              var barang = barangList[barangID];
+              if (barang.kuantitas > 0) {
+                  var listItem = document.createElement("li");
+                  listItem.className = "list-group-item";
+                  listItem.textContent = `${barang.nama} (${barang.kuantitas})`;
+                  daftarProduk.appendChild(listItem);
+              }
+          }
+      }
+      var keranjang = {};
+
+      // ... Kode barangList dan fungsi-fungsi lainnya tetap sama ...
+
+      // Fungsi untuk menambahkan barang ke keranjang
+      function tambahKeKeranjang(barangID) {
+          var barang = barangList[barangID];
+
+          if (barang) {
+              if (!keranjang[barangID]) {
+                  keranjang[barangID] = { nama: barang.nama, harga: barang.harga, kuantitas: 0 };
+              }
+              keranjang[barangID].kuantitas++;
+              updateKuantitas(barangID);
+          }
+      }
+
+      // Fungsi untuk menghitung total belanja dan menampilkannya
+      function totalBelanja() {
+          totalHarga = 0;
+          for (var barangID in keranjang) {
+              var barang = keranjang[barangID];
+              totalHarga += barang.harga * barang.kuantitas;
+          }
+          // Hitung pajak dan tambahkan ke total harga
+          var pajak = hitungPajak();
+          totalHarga += pajak;
+          updateTotalHarga();
+          tampilkanDaftarProduk();
+      }
+
+      // Fungsi untuk menampilkan daftar produk yang ditambahkan ke keranjang
+      function tampilkanDaftarProduk() {
+          var daftarProduk = document.getElementById("daftar-produk");
+          daftarProduk.innerHTML = ""; // Menghapus daftar produk sebelum menambahkannya kembali
+          for (var barangID in keranjang) {
+              var barang = keranjang[barangID];
+              if (barang.kuantitas > 0) {
+                  var listItem = document.createElement("li");
+                  listItem.className = "list-group-item";
+                  listItem.textContent = `${barang.nama} (${barang.kuantitas})`;
+                  daftarProduk.appendChild(listItem);
+              }
+          }
+      }
+  </script>
+  
+</body>
+</html>
